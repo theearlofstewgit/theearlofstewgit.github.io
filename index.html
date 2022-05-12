@@ -74,17 +74,17 @@ var xx = setInterval(function() {
   var distance = countDownDate - now;
     
   // Time calculations for days, hours, minutes and seconds
-  var days2 = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours2 = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes2 = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds2 = Math.floor((distance % (1000 * 60)) / 1000);
+  var days2 = Math.floor(distance2 / (1000 * 60 * 60 * 24));
+  var hours2 = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes2 = Math.floor((distance2 % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds2 = Math.floor((distance2 % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="cdt2"
   document.getElementById("cdt2").innerHTML = "Ends in " + hours2 + "h "
   + minutes2 + "m " + seconds2 + "s ";
     
   // If the count down is over, write some text 
-  if (distance < 0) {
+  if (distance2 < 0) {
     clearInterval(xx);
     document.getElementById("cdt2").innerHTML = "And now IT'S OVER";
 	
