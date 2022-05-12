@@ -62,7 +62,7 @@ var x = setInterval(function() {
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("May 12, 2022 20:00:00").getTime();
+var countDownDate = new Date2("May 12, 2022 20:00:00").getTime();
 
 // Update the count down every 1 second
 var xx = setInterval(function() {
@@ -80,7 +80,7 @@ var xx = setInterval(function() {
   var seconds2 = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="cdt2"
-  document.getElementById("cdt2").innerHTML = days2 + "d " + hours2 + "h "
+  document.getElementById("cdt2").innerHTML = "Ends in " + hours2 + "h "
   + minutes2 + "m " + seconds2 + "s ";
     
   // If the count down is over, write some text 
