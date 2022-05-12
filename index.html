@@ -2,6 +2,19 @@
 layout: default
 ---
 
+<div id="call"></div>
+
+<script>
+
+  var img = document.createElement("img");
+  img.src = "matplotlib-grid-02.png";
+
+  var div = document.getElementById("x");
+  div.appendChild(img);
+  //block.setAttribute("style", "text-align:center");
+
+</script>
+
 <h1>Your friends are calling...</h1>
 
 <!--
@@ -22,7 +35,7 @@ function myFunction() {
   <li>Leave at 7 PM</li>
 </ol>
 
-<h2 id="demo2"></h2>
+<h2 id="cdt"></h2>
 
 <script>
 // Set the date we're counting down to
@@ -44,13 +57,13 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("demo2").innerHTML = days + "d " + hours + "h "
+  document.getElementById("cdt").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
     
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo2").innerHTML = "EXPIRED";
+    document.getElementById("cdt").innerHTML = "EXPIRED";
   }
 }, 1000);
 </script>
