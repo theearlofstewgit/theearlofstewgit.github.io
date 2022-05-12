@@ -20,8 +20,8 @@ layout: default
 
 <ol>
   <li>Saturday 5/14 @ 5 PM</li>
-  <li>Greg & Laura's</li>
-  <li>Leave at 7 PM</li>
+  <li>@ Greg & Laura's</li>
+  <li>Ends @ 7 PM</li>
 </ol>
 
 <h2 id="cdt"></h2>
@@ -51,8 +51,9 @@ var x = setInterval(function() {
     
   // If the count down is over, write some text 
   if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("cdt").innerHTML = "EXPIRED";
+    // clearInterval(x);
+    // document.getElementById("cdt").innerHTML = "EXPIRED";
+	var countDownDate = Date("May 14, 2022 19:00:00").getTime();
   }
 }, 1000);
 </script>
