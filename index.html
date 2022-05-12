@@ -52,7 +52,7 @@ var x = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     // clearInterval(x);
-    // document.getElementById("cdt").innerHTML = "EXPIRED";
+    document.getElementById("cdt").innerHTML = "EXPIRED";
 	var countDownDate = Date("May 12, 2022 19:00:00").getTime();
 	document.getElementById("cdt").innerHTML = days + "d " + hours + "h "
     + minutes + "m " + seconds + "s ";
