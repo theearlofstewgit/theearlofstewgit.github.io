@@ -19,7 +19,7 @@ layout: default
 <h2>...for beer!</h2>
 
 <ol>
-  <li>Thursday 5/12 @ 5 PM</li>
+  <li>Saturday 5/14 @ 5 PM</li>
   <li>@ Greg & Laura's</li>
   <li>Ends @ 7 PM</li>
 </ol>
@@ -37,7 +37,7 @@ var x = setInterval(function() {
   var now = new Date().getTime();
     
   // Find the distance between now and the count down date
-  var distance = countDownDate - now - (2 * 1000 * 60 * 60);
+  var distance = countDownDate - (now + (2 * 1000 * 60 * 60));
     
   // Time calculations for days, hours, minutes and seconds
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
