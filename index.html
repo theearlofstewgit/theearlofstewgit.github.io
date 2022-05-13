@@ -13,20 +13,10 @@ layout: default
   //block.setAttribute("style", "text-align:left");
 </script>
 
-<div class="container">
 <!--
 	<h1>Your friends are calling...</h1>
-	-->
-	<h2 id="forbeer"></h2>
-</div>
-
-<!--
-<ul>
-  <li>Saturday 5/14 @ 5 PM</li>
-  <li>@ Greg & Laura's</li>
-  <li>Ends @ 7 PM</li>
-</ul>
 -->
+<h1 id="forbeer"></h1>
 
 <blockquote>
 Saturday 5/14 @ 5 PM</br>
@@ -55,7 +45,7 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
-  // Output the result in an element with id="cdt"
+  // Output the result in an elements with id="forbeer" and id="cdt"
   document.getElementById("forbeer").innerHTML = "...for beer!";
   document.getElementById("cdt").innerHTML = "Answer the call in " + days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
