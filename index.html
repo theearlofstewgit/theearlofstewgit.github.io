@@ -28,7 +28,7 @@ layout: default
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("May 12, 2022 19:30:00").getTime();
+var countDownDate = new Date("May 12, 2022 21:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -50,43 +50,15 @@ var x = setInterval(function() {
   + minutes + "m " + seconds + "s ";
     
   // If the count down is over, write some text 
-  if (distance < 0) {
+  if (minutes < 30) {
     clearInterval(x);
     document.getElementById("cdt").innerHTML = "And it's on RIGHT NOW!";
   }
-}, 1000);
-</script>
 
-<p id="cdt2"></p>
-
-<script>
-// Set the leaving time we're counting down to
-var countDownDate2 = new Date2("May 12, 2022 20:00:00").getTime();
-
-// Update the count down every 1 second
-var xx = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date2().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance2 = countDownDate2 - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days2 = Math.floor(distance2 / (1000 * 60 * 60 * 24));
-  var hours2 = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes2 = Math.floor((distance2 % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds2 = Math.floor((distance2 % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="cdt2"
-  document.getElementById("cdt2").innerHTML = "Ends in " + hours2 + "h "
-  + minutes2 + "m " + seconds2 + "s ";
-    
   // If the count down is over, write some text 
-  if (distance2 < 0) {
-    clearInterval(xx);
-    document.getElementById("cdt2").innerHTML = "And now IT'S OVER";
-	
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("cdt").innerHTML = "And now it's OVER";
   }
 }, 1000);
 </script>
