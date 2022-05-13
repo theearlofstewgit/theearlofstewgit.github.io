@@ -15,7 +15,7 @@ layout: default
 
 <div class="container">
 	<h1>Your friends are calling...</h1>
-	<h2 id="forbeer">...for beer!</h2>
+	<h2 id="forbeer"></h2>
 </div>
 
 <!--
@@ -54,6 +54,7 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="cdt"
+  document.getElementById("forbeer").innerHTML = "...for beer!";
   document.getElementById("cdt").innerHTML = "Answer the call in " + days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
     
